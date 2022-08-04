@@ -1,25 +1,24 @@
-// const { __esModule } = require('@testing-library/jest-dom/dist/matchers');
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const UserSchema = new Schema({
-    name: {
+    name:{
         type: String,
         required: true
     },
-    email: {
+    email:{
         type: String,
         required: true,
-        unique:true
+        unique: true
     },
-    password: {
+    password:{
         type: String,
         required: true
     },
-    timestamp: {
+    date:{
         type: Date,
         default: Date.now
     },
   });
-
-  module.exports = mongoose.model("user",UserSchema);
+  const User = mongoose.model('user', UserSchema);
+  module.exports = User;

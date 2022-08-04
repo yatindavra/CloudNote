@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bcryptjs": "^2.4.3",
     "concurrently": "^7.3.0",
+    "cors": "^2.8.5",
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.19",
     "react": "^18.2.0",
